@@ -16,13 +16,12 @@ import static org.junit.Assert.*;
 public class DfsDiscounterTest {
 
     DfsDiscounter discounter;
-    Map<Book, Integer> cart1;
-    Map<Book, Integer> cart2;
-    Map<Book, Integer> cart3;
 
     Book b1;
     Book b2;
     Book b3;
+    Book b4;
+    Book b5;
 
     @Before
     public void setUp()
@@ -31,14 +30,62 @@ public class DfsDiscounterTest {
         b1 = new Book("b1",8.0);
         b2 = new Book("b2",8.0);
         b3 = new Book("b3",8.0);
-
-
+        b4 = new Book("b4",8.0);
+        b5 = new Book("b5",8.0);
 
         discounter = new DfsDiscounter();
     }
 
     @Test
     public void getMinPrice() throws Exception {
+
+        HashMap<Book, Integer> cart = new HashMap<Book, Integer>();
+        assert(discounter.getMinPrice(cart)==0.0);
+
+        discounter = new DfsDiscounter();
+        cart.put(b1,1);
+        assert(discounter.getMinPrice(cart)==8.0);
+
+
+        discounter = new DfsDiscounter();
+        cart.put(b1,2);
+        assert(discounter.getMinPrice(cart)==16.0);
+
+        //All nodes
+        discounter = new DfsDiscounter();
+        cart.put(b1,1);
+        cart.put(b2,1);
+        cart.put(b3,1);
+        cart.put(b4,1);
+        cart.put(b5,1);
+        assert(discounter.getMinPrice(cart)==30.0);
+
+
+        //Group 4 and 2
+        discounter = new DfsDiscounter();
+        cart.put(b1,2);
+        cart.put(b2,1);
+        cart.put(b3,2);
+        cart.put(b4,1);
+        assert(discounter.getMinPrice(cart)==40.8);
+
+        //The tricky case
+        discounter = new DfsDiscounter();
+        cart.put(b1,2);
+        cart.put(b2,2);
+        cart.put(b3,2);
+        cart.put(b4,1);
+        cart.put(b5,1);
+        assert(discounter.getMinPrice(cart)==51.2);
+
+        //The long case
+        discounter = new DfsDiscounter();
+        cart.put(b1,5);
+        cart.put(b2,5);
+        cart.put(b3,4);
+        cart.put(b4,5);
+        cart.put(b5,4);
+        assert(discounter.getMinPrice(cart)==(3*5*8*0.75) + (2*4*8*0.8));
 
     }
 
@@ -51,15 +98,10 @@ public class DfsDiscounterTest {
         Set<Book> bs2 = new HashSet<>();
         bs2.add(b2);
 
-        Set<Book> bs23 = new HashSet<>();
-        bs23.add(b2);
-        bs23.add(b3);
-
         BookSet bookSet1 = new BookSet(bs1);
         BookSet bookSet2 = new BookSet(bs2);
-        BookSet bookSet23 = new BookSet(bs23);
 
-        DfsNode stackPeekFather = new DfsNode(null,bookSet23,0.0,1);
+        DfsNode stackPeekFather = new DfsNode(null,null,0.0,1);
         DfsNode node1 = new DfsNode(stackPeekFather,bookSet1,0.0,2);
         DfsNode node2 = new DfsNode(node1,bookSet2,0.0,3);
 
@@ -67,14 +109,14 @@ public class DfsDiscounterTest {
 
 
         cartFor1.put(b1,1);
-        cartFor1.put(b2,1);
-        cartFor1.put(b3,1);
+        cartFor1.put(b2,2);
+        cartFor1.put(b3,2);
 
         Map<Book, Integer> cartFor2 = new HashMap<>();
 
         cartFor2.put(b1,1);
-        cartFor2.put(b2,0);
-        cartFor2.put(b3,1);
+        cartFor2.put(b2,1);
+        cartFor2.put(b3,2);
 
         Map<Book, Integer> res1 = discounter.rollback(node1,cartFor1,stackPeekFather);
         Map<Book, Integer> res2 = discounter.rollback(node2,cartFor2,stackPeekFather);
@@ -92,15 +134,15 @@ public class DfsDiscounterTest {
     @Test
     public void generateNodes() throws Exception {
 
-        cart1 = new HashMap<>();
+        Map<Book, Integer> cart1 = new HashMap<>();
 
-        cart2 = new HashMap<>();
+        Map<Book, Integer>  cart2 = new HashMap<>();
 
         cart2.put(b1,2);
         cart2.put(b2,2);
         cart2.put(b3,2);
 
-        cart3 = new HashMap<>();
+        Map<Book, Integer> cart3 = new HashMap<>();
 
         cart3.put(b1,2);
         cart3.put(b2,0);

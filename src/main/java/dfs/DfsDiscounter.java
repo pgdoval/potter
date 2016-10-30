@@ -18,15 +18,10 @@ public class DfsDiscounter implements Discounter{
 
     private Stack<DfsNode> stack = new Stack<>();
 
+
+
+
     public DfsDiscounter(Map<Book, Integer> cart) {
-        this.cart = cart;
-    }
-
-    public Map<Book, Integer> getCart() {
-        return cart;
-    }
-
-    public void setCart(Map<Book, Integer> cart) {
         this.cart = cart;
     }
 
@@ -43,14 +38,29 @@ public class DfsDiscounter implements Discounter{
         * because in real life it's what discounts are all about.
         * */
 
+        System.out.println();
+        if(_cart==null || isDone(_cart))
+            return 0.0;
         cart = _cart;
 
+        stack.push(new DfsNode(null, new BookSet(new HashSet<Book>()), 0.0, 0));
 
+        while(!stack.isEmpty())
+        {
+            processNode(stack.pop());
+        }
 
+        if(bestSolution==null)
+            return 0.0;
+        else
+            return bestSolution.getSpent();
     }
+
 
     public boolean isDone(Map<Book, Integer> cart)
     {
+        if(cart.isEmpty())
+            return true;
         return cart.values().stream().allMatch(v-> v==0);
     }
 
@@ -76,7 +86,7 @@ public class DfsDiscounter implements Discounter{
             node = node.getFather();
         }
 
-        return modifyCart(cart, node.getSet().getBooks(), true);
+        return cart;
 
     }
 
@@ -88,20 +98,26 @@ public class DfsDiscounter implements Discounter{
         it's a better solution.
         * */
 
+
         cart = modifyCart(cart, currentNode.getSet().getBooks(), false);
         if(isDone(cart))
         {
-            if(bestSolution==null || bestSolution.getSpent() < currentNode.getSpent())
+            if(bestSolution==null || bestSolution.getSpent() > currentNode.getSpent())
             {
                 bestSolution = currentNode;
             }
-            cart = rollback(currentNode, cart, stack.peek().getFather());
+
+            if(!stack.isEmpty())
+                cart = rollback(currentNode, cart, stack.peek().getFather());
+
             return;
         }
         //Once we reached this point, we won't get any better in this branch
         if(bestSolution!=null && currentNode.getDepth() >= bestSolution.getDepth())
         {
-            cart = rollback(currentNode, cart, stack.peek().getFather());
+            if(!stack.isEmpty())
+                cart = rollback(currentNode, cart, stack.peek().getFather());
+
             return;
         }
 
@@ -130,7 +146,7 @@ public class DfsDiscounter implements Discounter{
         });
 
         //We sort them reverse because we are going to insert them in a stack
-        return unsortedResult.sorted((o1, o2) -> o2.getSet().getBooks().size()-o1.getSet().getBooks().size()).collect(Collectors.toList());
+        return unsortedResult.sorted((o1, o2) -> o1.getSet().getBooks().size()-o2.getSet().getBooks().size()).collect(Collectors.toList());
 
 
 
