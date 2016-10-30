@@ -23,9 +23,7 @@ public class BookSet {
 
     @Override
     public String toString() {
-        return "BookSet{" +
-                "books=" + books +
-                '}';
+        return books.stream().map((Book book)-> book.getName()).reduce((String a, String b)-> a+b).orElseGet(() -> "--");
     }
 
     public Double getPrice(){
