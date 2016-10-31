@@ -14,22 +14,16 @@ import java.util.stream.Stream;
 public class DfsDiscounter implements Discounter{
 
     private Map<Book, Integer> cart;
+    private Map<Integer, Double> discounts;
     private DfsNode bestSolution = null;
 
     private Stack<DfsNode> stack = new Stack<>();
-
-
-
-
-    public DfsDiscounter(Map<Book, Integer> cart) {
-        this.cart = cart;
-    }
 
     public DfsDiscounter() {
 
     }
 
-    public double getMinPrice(Map<Book, Integer> _cart) {
+    public double getMinPrice(Map<Book, Integer> _cart, Map<Integer, Double> _discounts) {
         /*
         * We are going to suppose that the discounts are compliant with the
         * rule that the best discount is contained into the set of discounts
@@ -38,10 +32,11 @@ public class DfsDiscounter implements Discounter{
         * because in real life it's what discounts are all about.
         * */
 
-        System.out.println();
         if(_cart==null || isDone(_cart))
             return 0.0;
+
         cart = _cart;
+        discounts = _discounts;
 
         stack.push(new DfsNode(null, new BookSet(new HashSet<Book>()), 0.0, 0));
 
@@ -142,8 +137,12 @@ public class DfsDiscounter implements Discounter{
             }
             return res;
         }).map(bookSet -> new BookSet(bookSet)).map(bookSet -> {
-            return new DfsNode(currentNode, bookSet, currentNode.getSpent() + bookSet.getPrice(), currentNode.getDepth() + 1);
+            return new DfsNode(currentNode, bookSet, currentNode.getSpent() + bookSet.getPrice(discounts), currentNode.getDepth() + 1);
         });
+
+        //We are assuming that given the nature of discounts, it's always better to get larger groups,
+        //so we are discarding the smaller ones. Exactly, we get the largest half given the available books.
+        unsortedResult = unsortedResult.filter(node -> node.getSet().getBooks().size() >= Math.ceil(((double)books.size()/2.0)));
 
         //We sort them reverse because we are going to insert them in a stack
         return unsortedResult.sorted((o1, o2) -> o1.getSet().getBooks().size()-o2.getSet().getBooks().size()).collect(Collectors.toList());

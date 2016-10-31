@@ -1,5 +1,6 @@
 package books;
 
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -26,28 +27,14 @@ public class BookSet {
         return books.stream().map((Book book)-> book.getName()).reduce((String a, String b)-> a+b).orElseGet(() -> "--");
     }
 
-    public Double getPrice(){
+    public Double getPrice(Map<Integer, Double> discounts){
         int numBooks = books.size();
+
+        double discount = discounts.getOrDefault(numBooks, 1.0);
 
         if(numBooks==0)
             return 0.0;
-            else return numBooks*books.iterator().next().getPrice()*getBookDiscount(numBooks);
+            else return numBooks*books.iterator().next().getPrice()*discount;
     }
 
-    private double getBookDiscount(int numBooks) {
-        switch (numBooks){
-            case 1:
-                return 1.0;
-            case 2:
-                return 0.95;
-            case 3:
-                return 0.9;
-            case 4:
-                return 0.8;
-            case 5:
-                return 0.75;
-            default:
-                return -1.0;
-        }
-    }
 }

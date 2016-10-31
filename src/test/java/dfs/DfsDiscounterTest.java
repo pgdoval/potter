@@ -39,54 +39,6 @@ public class DfsDiscounterTest {
     @Test
     public void getMinPrice() throws Exception {
 
-        HashMap<Book, Integer> cart = new HashMap<Book, Integer>();
-        assert(discounter.getMinPrice(cart)==0.0);
-
-        discounter = new DfsDiscounter();
-        cart.put(b1,1);
-        assert(discounter.getMinPrice(cart)==8.0);
-
-
-        discounter = new DfsDiscounter();
-        cart.put(b1,2);
-        assert(discounter.getMinPrice(cart)==16.0);
-
-        //All nodes
-        discounter = new DfsDiscounter();
-        cart.put(b1,1);
-        cart.put(b2,1);
-        cart.put(b3,1);
-        cart.put(b4,1);
-        cart.put(b5,1);
-        assert(discounter.getMinPrice(cart)==30.0);
-
-
-        //Group 4 and 2
-        discounter = new DfsDiscounter();
-        cart.put(b1,2);
-        cart.put(b2,1);
-        cart.put(b3,2);
-        cart.put(b4,1);
-        assert(discounter.getMinPrice(cart)==40.8);
-
-        //The tricky case
-        discounter = new DfsDiscounter();
-        cart.put(b1,2);
-        cart.put(b2,2);
-        cart.put(b3,2);
-        cart.put(b4,1);
-        cart.put(b5,1);
-        assert(discounter.getMinPrice(cart)==51.2);
-
-        //The long case
-        discounter = new DfsDiscounter();
-        cart.put(b1,5);
-        cart.put(b2,5);
-        cart.put(b3,4);
-        cart.put(b4,5);
-        cart.put(b5,4);
-        assert(discounter.getMinPrice(cart)==(3*5*8*0.75) + (2*4*8*0.8));
-
     }
 
     @Test

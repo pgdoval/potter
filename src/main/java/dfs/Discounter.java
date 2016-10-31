@@ -9,5 +9,5 @@ import java.util.Map;
  */
 public interface Discounter {
 
-    double getMinPrice(Map<Book,Integer> cart);
+    double getMinPrice(Map<Book,Integer> cart,  Map<Integer, Double> discounts);
 }

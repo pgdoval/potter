@@ -1,5 +1,7 @@
 package books;
 
+import consumer.DiscounterConsumer;
+
 import java.util.HashSet;
 
 import static org.junit.Assert.*;
@@ -49,11 +51,11 @@ public class BookSetTest {
         BookSet bs4 = new BookSet(fourBooks);
         BookSet bs5 = new BookSet(fiveBooks);
 
-        assert(bs1.getPrice()==8.0);
-        assert(bs2.getPrice()==15.2);
-        assert(bs3.getPrice()==21.6);
-        assert(bs4.getPrice()==25.6);
-        assert(bs5.getPrice()==30.0);
+        assert(bs1.getPrice(DiscounterConsumer.typicalDiscounts())==8.0);
+        assert(bs2.getPrice(DiscounterConsumer.typicalDiscounts())==15.2);
+        assert(bs3.getPrice(DiscounterConsumer.typicalDiscounts())==21.6);
+        assert(bs4.getPrice(DiscounterConsumer.typicalDiscounts())==25.6);
+        assert(bs5.getPrice(DiscounterConsumer.typicalDiscounts())==30.0);
     }
 
 }
