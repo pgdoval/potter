@@ -35,10 +35,11 @@ public class DfsDiscounter implements Discounter{
         if(_cart==null || isDone(_cart))
             return 0.0;
 
-        cart = _cart;
+        cart = _cart.entrySet().stream().filter(entry -> entry.getValue()>0).collect(Collectors.toMap(entry -> entry.getKey(), entry -> entry.getValue()));
+
         discounts = _discounts;
 
-        stack.push(new DfsNode(null, new BookSet(new HashSet<Book>()), 0.0, 0));
+        stack.push(advanceInitialNodes());
 
         while(!stack.isEmpty())
         {
@@ -51,12 +52,37 @@ public class DfsDiscounter implements Discounter{
             return bestSolution.getSpent();
     }
 
+    private DfsNode advanceInitialNodes(){
+        DfsNode node = new DfsNode(null, new BookSet(new HashSet<Book>()), 0.0, 0);
+
+        long differentBooks = cart.entrySet().stream().count();
+
+        if(differentBooks==0)
+            return node;
+
+        int minNumberOfBooks = cart.entrySet().stream().min((o1, o2) -> o1.getValue()-o2.getValue()).get().getValue();
+
+        Set<Book> allBooks = cart.entrySet().stream().map(it -> it.getKey()).collect(Collectors.toSet());
+
+        BookSet bookSet = new BookSet(allBooks);
+
+        while(minNumberOfBooks>= differentBooks)
+        {
+            node = new DfsNode(node, bookSet, node.getSpent() + bookSet.getPrice(discounts), node.getDepth()+1);
+            cart = modifyCart(cart, allBooks, false);
+            minNumberOfBooks--;
+        }
+
+        node = new DfsNode(node, new BookSet(new HashSet<Book>()), node.getSpent(), node.getDepth()+1);
+
+        return node;
+    }
 
     public boolean isDone(Map<Book, Integer> cart)
     {
         if(cart.isEmpty())
             return true;
-        return cart.values().stream().allMatch(v-> v==0);
+        return cart.values().stream().allMatch(v-> v<=0);
     }
 
     public Map<Book, Integer> modifyCart(Map<Book, Integer> cart, Set<Book> books, boolean returning)

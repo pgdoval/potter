@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ece067-5a54-4aa2-989d-fd524ec16f79" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/consumer/DiscounterConsumer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dfs/DfsDiscounter.class" afterPath="$PROJECT_DIR$/target/classes/dfs/DfsDiscounter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/consumer/DiscounterConsumerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/consumer/DiscounterConsumerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/books/BookSet.java" afterPath="$PROJECT_DIR$/src/main/java/books/BookSet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dfs/DfsDiscounter.java" afterPath="$PROJECT_DIR$/src/main/java/dfs/DfsDiscounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dfs/Discounter.java" afterPath="$PROJECT_DIR$/src/main/java/dfs/Discounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/books/BookSetTest.java" afterPath="$PROJECT_DIR$/src/test/java/books/BookSetTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/dfs/DfsDiscounterTest.java" afterPath="$PROJECT_DIR$/src/test/java/dfs/DfsDiscounterTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java" afterPath="$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +44,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
               <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-              <folding />
+              <folding>
+                <element signature="e#159#160#0" expanded="false" />
+                <element signature="e#187#188#0" expanded="false" />
+                <element signature="e#229#230#0" expanded="false" />
+                <element signature="e#263#264#0" expanded="false" />
+                <element signature="e#294#295#0" expanded="false" />
+                <element signature="e#321#322#0" expanded="false" />
+                <element signature="e#361#362#0" expanded="false" />
+                <element signature="e#393#394#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,8 +85,8 @@
       <file leaf-file-name="DiscounterConsumerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+            <state relative-caret-position="575">
+              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
               <folding>
                 <element signature="e#726#741#0" expanded="true" />
               </folding>
@@ -101,11 +107,11 @@
       <file leaf-file-name="DfsDiscounter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dfs/DfsDiscounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="144" column="128" selection-start-line="144" selection-start-column="128" selection-end-line="144" selection-end-column="128" />
+            <state relative-caret-position="221">
+              <caret line="75" column="82" selection-start-line="75" selection-start-column="82" selection-end-line="75" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3864#3870#0" expanded="true" />
+                <element signature="e#4888#4894#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -872,34 +878,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookSetTest - 2016.10.31 at 12h 49m 55s.xml">
-      <configuration name="BookSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookSetTest - 2016.10.31 at 12h 51m 14s.xml">
-      <configuration name="BookSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DiscounterConsumerTest - 2016.10.31 at 12h 49m 03s.xml">
-      <configuration name="DiscounterConsumerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DiscounterConsumerTest - 2016.10.31 at 12h 49m 11s.xml">
-      <configuration name="DiscounterConsumerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DiscounterConsumerTest - 2016.10.31 at 12h 51m 30s.xml">
-      <configuration name="DiscounterConsumerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 12h 54m 55s.xml">
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 20m 34s.xml">
       <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 13h 04m 31s.xml">
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 22m 31s.xml">
       <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 13h 30m 50s.xml">
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 22m 53s.xml">
       <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 13h 31m 21s.xml">
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 24m 31s.xml">
       <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 13h 31m 38s.xml">
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 24m 55s.xml">
+      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 25m 52s.xml">
+      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 30m 17s.xml">
+      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 31m 30s.xml">
+      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 31m 51s.xml">
+      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 32m 27s.xml">
       <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -957,7 +963,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#159#160#0" expanded="false" />
+            <element signature="e#187#188#0" expanded="false" />
+            <element signature="e#229#230#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
+            <element signature="e#393#394#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -985,7 +1000,7 @@
           <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3864#3870#0" expanded="true" />
+            <element signature="e#4888#4894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1034,7 +1049,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#159#160#0" expanded="false" />
+            <element signature="e#187#188#0" expanded="false" />
+            <element signature="e#229#230#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
+            <element signature="e#393#394#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,7 +1086,7 @@
           <caret line="118" column="97" selection-start-line="118" selection-start-column="97" selection-end-line="118" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3864#3870#0" expanded="true" />
+            <element signature="e#4888#4894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1111,7 +1135,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#159#160#0" expanded="false" />
+            <element signature="e#187#188#0" expanded="false" />
+            <element signature="e#229#230#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
+            <element signature="e#393#394#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1139,7 +1172,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3864#3870#0" expanded="true" />
+            <element signature="e#4888#4894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1188,7 +1221,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#159#160#0" expanded="false" />
+            <element signature="e#187#188#0" expanded="false" />
+            <element signature="e#229#230#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
+            <element signature="e#393#394#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1216,7 +1258,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3864#3870#0" expanded="true" />
+            <element signature="e#4888#4894#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1257,7 +1299,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#159#160#0" expanded="false" />
+            <element signature="e#187#188#0" expanded="false" />
+            <element signature="e#229#230#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
+            <element signature="e#393#394#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,7 +1357,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#159#160#0" expanded="false" />
+            <element signature="e#187#188#0" expanded="false" />
+            <element signature="e#229#230#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
+            <element signature="e#393#394#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1372,19 +1432,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dfs/DfsDiscounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="144" column="128" selection-start-line="144" selection-start-column="128" selection-end-line="144" selection-end-column="128" />
+        <state relative-caret-position="221">
+          <caret line="75" column="82" selection-start-line="75" selection-start-column="82" selection-end-line="75" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3864#3870#0" expanded="true" />
+            <element signature="e#4888#4894#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+        <state relative-caret-position="575">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
           <folding>
             <element signature="e#726#741#0" expanded="true" />
           </folding>

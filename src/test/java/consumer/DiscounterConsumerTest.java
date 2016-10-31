@@ -82,12 +82,12 @@ public class DiscounterConsumerTest {
         assert(consumer.getMinPrice(cart)==(3*5*8*0.75) + (2*4*8*0.8));
 
         //The longest case
-        cart.put(b1,6);
-        cart.put(b2,6);
-        cart.put(b3,5);
-        cart.put(b4,6);
-        cart.put(b5,5);
-        assert(consumer.getMinPrice(cart)==(4*5*8*0.75) + (2*4*8*0.8));
+        cart.put(b1,29);
+        cart.put(b2,29);
+        cart.put(b3,28);
+        cart.put(b4,28);
+        cart.put(b5,29);
+        assert(consumer.getMinPrice(cart)==(27*5*8*0.75) + (2*4*8*0.8));
 
     }
 
