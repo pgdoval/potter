@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ece067-5a54-4aa2-989d-fd524ec16f79" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/consumer/DiscounterConsumer.class" afterPath="$PROJECT_DIR$/target/classes/consumer/DiscounterConsumer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dfs/DfsDiscounter.class" afterPath="$PROJECT_DIR$/target/classes/dfs/DfsDiscounter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/consumer/DiscounterConsumerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/consumer/DiscounterConsumerTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/dfs/DfsDiscounterTest.class" afterPath="$PROJECT_DIR$/target/test-classes/dfs/DfsDiscounterTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/books/BookSet.java" afterPath="$PROJECT_DIR$/src/main/java/books/BookSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/consumer/DiscounterConsumer.java" afterPath="$PROJECT_DIR$/src/main/java/consumer/DiscounterConsumer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dfs/DfsDiscounter.java" afterPath="$PROJECT_DIR$/src/main/java/dfs/DfsDiscounter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dfs/DfsNode.java" afterPath="$PROJECT_DIR$/src/main/java/dfs/DfsNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/books/BookSetTest.java" afterPath="$PROJECT_DIR$/src/test/java/books/BookSetTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java" afterPath="$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/dfs/DfsDiscounterTest.java" afterPath="$PROJECT_DIR$/src/test/java/dfs/DfsDiscounterTest.java" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,31 +36,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Book.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/books/Book.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
               <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-              <folding>
-                <element signature="e#159#160#0" expanded="false" />
-                <element signature="e#187#188#0" expanded="false" />
-                <element signature="e#229#230#0" expanded="false" />
-                <element signature="e#263#264#0" expanded="false" />
-                <element signature="e#294#295#0" expanded="false" />
-                <element signature="e#321#322#0" expanded="false" />
-                <element signature="e#361#362#0" expanded="false" />
-                <element signature="e#393#394#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,8 +49,8 @@
       <file leaf-file-name="BookSet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/books/BookSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="29" column="26" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="619">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,8 +61,8 @@
       <file leaf-file-name="DiscounterConsumer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/consumer/DiscounterConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="44">
+              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,14 +70,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiscounterConsumerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DiscounterConsumerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
-              <folding>
-                <element signature="e#726#741#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-738">
+              <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,8 +83,8 @@
       <file leaf-file-name="BookSetTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/books/BookSetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-600">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="322">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -107,11 +93,11 @@
       <file leaf-file-name="DfsDiscounter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dfs/DfsDiscounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="75" column="82" selection-start-line="75" selection-start-column="82" selection-end-line="75" selection-end-column="82" />
+            <state relative-caret-position="349">
+              <caret line="79" column="56" selection-start-line="79" selection-start-column="56" selection-end-line="79" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4888#4894#0" expanded="true" />
+                <element signature="e#6690#6696#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,8 +106,8 @@
       <file leaf-file-name="DfsDiscounterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/dfs/DfsDiscounterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="184">
+              <caret line="98" column="86" selection-start-line="98" selection-start-column="86" selection-end-line="98" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -130,9 +116,11 @@
       <file leaf-file-name="DfsNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dfs/DfsNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-              <folding />
+            <state relative-caret-position="322">
+              <caret line="16" column="76" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,16 +167,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/books.java" />
         <option value="$PROJECT_DIR$/src/main/java/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dfs/DfsNode.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/books/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/books/BookSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dfs/Discounter.java" />
         <option value="$PROJECT_DIR$/src/test/java/dfs/DfsDiscounterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/books/BookSetTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/consumer/DiscounterConsumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dfs/DfsNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/dfs/DfsDiscounter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/books/BookSet.java" />
       </list>
     </option>
   </component>
@@ -235,8 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -427,7 +414,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -448,7 +436,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DiscounterConsumerTest.getMinPrice">
+  <component name="RunManager" selected="JUnit.All in potter">
     <configuration default="false" name="BookSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -541,6 +529,27 @@
       <option name="MAIN_CLASS_NAME" value="consumer.DiscounterConsumerTest" />
       <option name="METHOD_NAME" value="getMinPrice" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in potter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="potter" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -832,18 +841,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BookSetTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.DfsDiscounterTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.DiscounterConsumerTest" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.DiscounterConsumerTest.getMinPrice" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in potter" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DiscounterConsumerTest.getMinPrice" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DiscounterConsumerTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BookSetTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DfsDiscounterTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in potter" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DiscounterConsumerTest.getMinPrice" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DiscounterConsumerTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BookSetTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DfsDiscounterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -878,34 +889,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 20m 34s.xml">
-      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    <history-entry file="All_in_potter - 2016.11.01 at 11h 18m 35s.xml">
+      <configuration name="All in potter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 22m 31s.xml">
-      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    <history-entry file="All_in_potter - 2016.11.01 at 11h 19m 11s.xml">
+      <configuration name="All in potter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 22m 53s.xml">
-      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    <history-entry file="All_in_potter - 2016.11.01 at 11h 19m 34s.xml">
+      <configuration name="All in potter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 24m 31s.xml">
-      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    <history-entry file="All_in_potter - 2016.11.01 at 11h 19m 46s.xml">
+      <configuration name="All in potter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 24m 55s.xml">
-      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    <history-entry file="All_in_potter - 2016.11.01 at 11h 20m 06s.xml">
+      <configuration name="All in potter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 25m 52s.xml">
-      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    <history-entry file="All_in_potter - 2016.11.01 at 11h 48m 38s.xml">
+      <configuration name="All in potter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 30m 17s.xml">
-      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 31m 30s.xml">
-      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 31m 51s.xml">
-      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    <history-entry file="All_in_potter - 2016.11.01 at 11h 55m 23s.xml">
+      <configuration name="All in potter" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 32m 27s.xml">
+      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 32m 43s.xml">
+      <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscounterConsumerTest_getMinPrice - 2016.10.31 at 16h 34m 00s.xml">
       <configuration name="DiscounterConsumerTest.getMinPrice" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -921,12 +932,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29298067" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29298067" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496017" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -936,6 +946,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496017" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -959,23 +970,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/books/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <element signature="e#159#160#0" expanded="false" />
-            <element signature="e#187#188#0" expanded="false" />
-            <element signature="e#229#230#0" expanded="false" />
-            <element signature="e#263#264#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#321#322#0" expanded="false" />
-            <element signature="e#361#362#0" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/books/BookSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1000,7 +994,7 @@
           <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4888#4894#0" expanded="true" />
+            <element signature="e#6690#6696#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1017,7 +1011,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,7 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,16 +1043,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#159#160#0" expanded="false" />
-            <element signature="e#187#188#0" expanded="false" />
-            <element signature="e#229#230#0" expanded="false" />
-            <element signature="e#263#264#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#321#322#0" expanded="false" />
-            <element signature="e#361#362#0" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,7 +1071,7 @@
           <caret line="118" column="97" selection-start-line="118" selection-start-column="97" selection-end-line="118" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4888#4894#0" expanded="true" />
+            <element signature="e#6690#6696#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1103,7 +1088,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,7 +1106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,7 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,16 +1120,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#159#160#0" expanded="false" />
-            <element signature="e#187#188#0" expanded="false" />
-            <element signature="e#229#230#0" expanded="false" />
-            <element signature="e#263#264#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#321#322#0" expanded="false" />
-            <element signature="e#361#362#0" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1172,7 +1148,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4888#4894#0" expanded="true" />
+            <element signature="e#6690#6696#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1189,7 +1165,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1205,7 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,7 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1221,16 +1197,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#159#160#0" expanded="false" />
-            <element signature="e#187#188#0" expanded="false" />
-            <element signature="e#229#230#0" expanded="false" />
-            <element signature="e#263#264#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#321#322#0" expanded="false" />
-            <element signature="e#361#362#0" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,7 +1225,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4888#4894#0" expanded="true" />
+            <element signature="e#6690#6696#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1267,7 +1234,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1283,7 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1291,7 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,16 +1266,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#159#160#0" expanded="false" />
-            <element signature="e#187#188#0" expanded="false" />
-            <element signature="e#229#230#0" expanded="false" />
-            <element signature="e#263#264#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#321#322#0" expanded="false" />
-            <element signature="e#361#362#0" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,7 +1292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1342,7 +1299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1350,23 +1306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/books/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <element signature="e#159#160#0" expanded="false" />
-            <element signature="e#187#188#0" expanded="false" />
-            <element signature="e#229#230#0" expanded="false" />
-            <element signature="e#263#264#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#321#322#0" expanded="false" />
-            <element signature="e#361#362#0" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1378,18 +1317,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Descargas/jdk1.8.0_111/src.zip!/java/util/stream/LongPipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dfs/DfsDiscounterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="98" column="86" selection-start-line="98" selection-start-column="86" selection-end-line="98" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-738">
+          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/books/BookSetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/consumer/DiscounterConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dfs/DfsNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding />
+        <state relative-caret-position="322">
+          <caret line="16" column="76" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dfs/DfsDiscounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="79" column="56" selection-start-line="79" selection-start-column="56" selection-end-line="79" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6690#6696#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/books/BookSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="619">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1404,50 +1397,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dfs/DfsDiscounterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/books/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="115">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/consumer/DiscounterConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/books/BookSetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dfs/DfsDiscounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="75" column="82" selection-start-line="75" selection-start-column="82" selection-end-line="75" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4888#4894#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/consumer/DiscounterConsumerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
-          <folding>
-            <element signature="e#726#741#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

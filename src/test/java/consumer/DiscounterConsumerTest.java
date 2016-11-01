@@ -14,8 +14,6 @@ import static org.junit.Assert.*;
  */
 public class DiscounterConsumerTest {
 
-    DiscounterConsumer consumer;
-
     Book b1;
     Book b2;
     Book b3;
@@ -33,20 +31,28 @@ public class DiscounterConsumerTest {
         b4 = new Book("b4",8.0);
         b5 = new Book("b5",8.0);
 
-        consumer = new DiscounterConsumer();
     }
 
     @Test
     public void getMinPrice() throws Exception {
+        /*
+        * We test the whole process, with several cases:
+        * * empty case
+        * * easy cases
+        * * tricky combination cases
+        * * non-tricky combination cases
+        * * cases with some cart elements set to zero
+        * * cases with a lot of elements in the cart
+        * */
 
         HashMap<Book, Integer> cart = new HashMap<Book, Integer>();
-        assert(consumer.getMinPrice(cart)==0.0);
+        assert(DiscounterConsumer.getMinPrice(cart)==0.0);
 
         cart.put(b1,1);
-        assert(consumer.getMinPrice(cart)==8.0);
+        assert(DiscounterConsumer.getMinPrice(cart)==8.0);
 
         cart.put(b1,2);
-        assert(consumer.getMinPrice(cart)==16.0);
+        assert(DiscounterConsumer.getMinPrice(cart)==16.0);
 
         //All nodes
         cart.put(b1,1);
@@ -54,7 +60,7 @@ public class DiscounterConsumerTest {
         cart.put(b3,1);
         cart.put(b4,1);
         cart.put(b5,1);
-        assert(consumer.getMinPrice(cart)==30.0);
+        assert(DiscounterConsumer.getMinPrice(cart)==30.0);
 
 
         //Group 4 and 2
@@ -63,7 +69,7 @@ public class DiscounterConsumerTest {
         cart.put(b3,2);
         cart.put(b4,1);
         cart.put(b5,0);
-        assert(consumer.getMinPrice(cart)==40.8);
+        assert(DiscounterConsumer.getMinPrice(cart)==40.8);
 
         //The tricky case
         cart.put(b1,2);
@@ -71,7 +77,7 @@ public class DiscounterConsumerTest {
         cart.put(b3,2);
         cart.put(b4,1);
         cart.put(b5,1);
-        assert(consumer.getMinPrice(cart)==51.2);
+        assert(DiscounterConsumer.getMinPrice(cart)==51.2);
 
         //The long case
         cart.put(b1,5);
@@ -79,7 +85,7 @@ public class DiscounterConsumerTest {
         cart.put(b3,4);
         cart.put(b4,5);
         cart.put(b5,4);
-        assert(consumer.getMinPrice(cart)==(3*5*8*0.75) + (2*4*8*0.8));
+        assert(DiscounterConsumer.getMinPrice(cart)==(3*5*8*0.75) + (2*4*8*0.8));
 
         //The longest case
         cart.put(b1,29);
@@ -87,7 +93,7 @@ public class DiscounterConsumerTest {
         cart.put(b3,28);
         cart.put(b4,28);
         cart.put(b5,29);
-        assert(consumer.getMinPrice(cart)==(27*5*8*0.75) + (2*4*8*0.8));
+        assert(DiscounterConsumer.getMinPrice(cart)==(27*5*8*0.75) + (2*4*8*0.8));
 
     }
 

@@ -12,6 +12,12 @@ import static org.junit.Assert.*;
 public class BookSetTest {
     @org.junit.Test
     public void getPrice() throws Exception {
+        /*
+        * We just check that in all the combinations, the
+        * calculated price is the same as the expected one.
+        * This has been very useful when we gave entity to
+        * discounts, externalizing them.
+        * */
 
         Book b1 = new Book("book 1", 8.0);
         Book b2 = new Book("book 2", 8.0);
@@ -19,11 +25,11 @@ public class BookSetTest {
         Book b4 = new Book("book 4", 8.0);
         Book b5 = new Book("book 5", 8.0);
 
-        HashSet<Book> oneBook = new HashSet<Book>();
-        HashSet<Book> twoBooks = new HashSet<Book>();
-        HashSet<Book> threeBooks = new HashSet<Book>();
-        HashSet<Book> fourBooks = new HashSet<Book>();
-        HashSet<Book> fiveBooks = new HashSet<Book>();
+        HashSet<Book> oneBook = new HashSet<>();
+        HashSet<Book> twoBooks = new HashSet<>();
+        HashSet<Book> threeBooks = new HashSet<>();
+        HashSet<Book> fourBooks = new HashSet<>();
+        HashSet<Book> fiveBooks = new HashSet<>();
 
         oneBook.add(b1);
         twoBooks.add(b1);

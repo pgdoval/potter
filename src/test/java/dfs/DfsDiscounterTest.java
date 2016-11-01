@@ -2,6 +2,7 @@ package dfs;
 
 import books.Book;
 import books.BookSet;
+import consumer.DiscounterConsumer;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -43,6 +44,10 @@ public class DfsDiscounterTest {
 
     @Test
     public void rollback() throws Exception {
+        /*
+        * In each case, we simulate the state of the cart after processing needed nodes.
+          * In one case, we backtrack one step and in the other we backtrack two steps
+        * */
 
         Set<Book> bs1 = new HashSet<>();
         bs1.add(b1);
@@ -85,6 +90,14 @@ public class DfsDiscounterTest {
 
     @Test
     public void generateNodes() throws Exception {
+        /*
+        * Our test cases cover:
+        * * empty cart generates no nodes
+        * * full cart generates normal nodes
+        * * cart with one element set to zero doesn't take that element into account
+        * * as an optimization, only nodes who have many books are generated (the upper
+        *   half of the available nodes, not taking into account elements set to zero)
+        * */
 
         Map<Book, Integer> cart1 = new HashMap<>();
 
@@ -99,26 +112,28 @@ public class DfsDiscounterTest {
         cart3.put(b1,2);
         cart3.put(b2,0);
         cart3.put(b3,2);
-        DfsNode node = new DfsNode(null,null,1.0,1);
+        DfsNode node = new DfsNode(null,new BookSet(new HashSet<>()),1.0,1);
 
-        List<DfsNode> nodes1 = discounter.generateNodes(node, cart1);
-        List<DfsNode> nodes2 = discounter.generateNodes(node, cart2);
-        List<DfsNode> nodes3 = discounter.generateNodes(node, cart3);
+        List<DfsNode> nodes1 = discounter.generateNodes(node, cart1, DiscounterConsumer.typicalDiscounts());
+        List<DfsNode> nodes2 = discounter.generateNodes(node, cart2, DiscounterConsumer.typicalDiscounts());
+        List<DfsNode> nodes3 = discounter.generateNodes(node, cart3, DiscounterConsumer.typicalDiscounts());
 
 
         assert(nodes1.isEmpty());
 
-
-        assert(nodes2.size()==7);
+        assert(nodes2.size()==4);
         assert(nodes2.stream().filter(it -> it.getSet().getBooks().size()==3).count()==1);
         assert(nodes2.stream().filter(it -> it.getSet().getBooks().size()==2).count()==3);
-        assert(nodes2.stream().filter(it -> it.getSet().getBooks().size()==1).count()==3);
+        //Only first half has nodes
+        assert(nodes2.stream().filter(it -> it.getSet().getBooks().size()==1).count()==0);
         assert(nodes2.stream().filter(it -> it.getSet().getBooks().size()==0).count()==0);
 
 
         assert(nodes3.size()==3);
         assert(nodes3.stream().filter(it -> it.getSet().getBooks().size()==2).count()==1);
         assert(nodes3.stream().filter(it -> it.getSet().getBooks().size()==1).count()==2);
+        //Only first half has nodes
+        assert(nodes3.stream().filter(it -> it.getSet().getBooks().size()==0).count()==0);
     }
 
 }

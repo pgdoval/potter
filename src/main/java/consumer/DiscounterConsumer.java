@@ -14,12 +14,15 @@ public class DiscounterConsumer {
 
     public static double getMinPrice(Map<Book,Integer> cart)
     {
+        //We could create a factory class if we see a need for it,
+        //i.e. if we find another strategy and want to test both.
         Discounter discounter = new DfsDiscounter();
 
         return discounter.getMinPrice(cart, typicalDiscounts());
 
     }
 
+    //This method could read a file or something
     public static Map<Integer, Double> typicalDiscounts(){
 
         Map<Integer, Double> discounts = new HashMap<>();

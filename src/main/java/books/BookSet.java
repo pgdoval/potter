@@ -34,7 +34,9 @@ public class BookSet {
 
         if(numBooks==0)
             return 0.0;
-            else return numBooks*books.iterator().next().getPrice()*discount;
+        //ugly way to get the price of one book (they're all the same)
+        else
+            return numBooks*books.iterator().next().getPrice()*discount;
     }
 
 }

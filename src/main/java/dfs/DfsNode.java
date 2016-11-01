@@ -2,6 +2,8 @@ package dfs;
 
 import books.BookSet;
 
+import java.util.Map;
+
 /**
  * Created by pablo on 30/10/16.
  */
@@ -11,6 +13,11 @@ public class DfsNode {
     private BookSet set;
     private double spent;
     private int depth;
+
+    public DfsNode generateNext(BookSet set, Map<Integer, Double> discounts)
+    {
+        return new DfsNode(this, set, spent + set.getPrice(discounts), depth + 1);
+    }
 
     public DfsNode(DfsNode father, BookSet set, double spent, int depth) {
         this.father = father;
